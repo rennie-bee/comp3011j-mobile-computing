@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_map">
+    <!--    This layout organizes the 4 fragments. Each of the
+    fragment below links to a fragment java and id, page label are
+    defined here.
+    Mentioning: This layout does not manage the bar but different
+    fragments.-->
+    <!--The name of status bar is defined below with label attribute-->
+    <fragment
+        android:id="@+id/navigation_forum"
+        android:name="com.example.eldercare.ui.forum.ForumFragment"
+        android:label="Note Page"
+        tools:layout="@layout/fragment_forum" />
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.example.eldercare.ui.info.InfoFragment"
+        android:label="Info Page"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.example.eldercare.ui.map.MapFragment"
+        android:label="Map Page"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/navigation_product"
+        android:name="com.example.eldercare.ui.product.ProductFragment"
+        android:label="Product Page"
+        tools:layout="@layout/fragment_product" />
+</navigation>

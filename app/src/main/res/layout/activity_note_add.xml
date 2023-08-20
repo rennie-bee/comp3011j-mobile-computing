@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NoteAddActivity"
+    android:background="@drawable/fragment_background">
+
+    <!--  Scrollable-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--  Use a table layout-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:stretchColumns="1"
+            android:shrinkColumns="1">
+
+            <!--This row symbolizes note title-->
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="right"
+                    android:text="TITLE"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/add_note_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:hint="Note Title"
+                    android:inputType="textEmailAddress"
+                    android:selectAllOnFocus="true"
+                    android:textStyle="bold|italic"
+                    tools:ignore="Autofill" />
+            </TableRow>
+
+            <!--This row symbolizes note content-->
+            <TableRow
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+                    android:text="CONTENT"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/add_note_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:hint="Note Content"
+                    android:inputType="textMultiLine"
+                    android:textStyle="bold|italic"
+                    android:minLines="12"
+                    android:maxLines="12"
+                    android:scrollbars="vertical"
+                    android:gravity="start"
+                    tools:ignore="Autofill" />
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp">
+
+                <!--Button to go back to note layout-->
+                <Button
+                    android:id="@+id/back_to_note"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:text="BACK"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"/>
+                <!--Button to add new note to note layout-->
+                <Button
+                    android:id="@+id/add_to_note"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:text="ADD"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"/>
+
+            </LinearLayout>
+
+        </TableLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

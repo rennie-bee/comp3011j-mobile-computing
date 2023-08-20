@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--LitePal is a very light pack that can operates sqlite database-->
+<litepal>
+    <dbname value="users" /> <!--The dbname value equals the name of the database file-->
+    <version value="7" /> <!--The version is the xxx version of the database-->
+    <list> <!--The list stores all the tables in the database. Here I connects this xml to 2 tables:
+    User and Note.-->
+        <mapping class="com.example.eldercare.User" />
+        <mapping class="com.example.eldercare.Note" />
+    </list>
+</litepal>

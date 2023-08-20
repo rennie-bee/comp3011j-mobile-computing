@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity"
+    android:orientation="vertical"
+    android:background="@drawable/fragment_background">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/fontwhite"/>
+
+    <!-- The first text editing area, for username input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/tv_login_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:text="USERNAME"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:hint="Please enter your username"
+            android:textStyle="italic"
+            android:background="#FF978B"/>
+    </LinearLayout>
+
+    <!-- The second text editing area, for password input -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_login_password"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="0dp"
+            android:layout_weight="4.5"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"
+            android:hint="Please enter your password"
+            android:textStyle="italic"
+            android:background="#FEAAA0"/>
+    </LinearLayout>
+
+    <!-- The clickable area, for directing registering -->
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:text="No account? Register now!"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:onClick="onClick"/>
+
+    <!-- Login button -->
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="LOGIN"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:onClick="onClick" />
+</LinearLayout>
+

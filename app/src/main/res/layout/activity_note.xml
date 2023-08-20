@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NoteActivity"
+    android:background="@drawable/fragment_background_note">
+
+    <!-- use recyclerview -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--    button for backing to previous note fragment-->
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        fab:fab_icon="@drawable/ic_back"
+        fab:fab_colorNormal="#ab253d"
+        fab:fab_colorPressed="#f05060"
+        android:elevation="20dp" />
+    <!--    button for adding a new note to the page-->
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        fab:fab_icon="@drawable/ic_add"
+        fab:fab_colorNormal="#ab253d"
+        fab:fab_colorPressed="#f05060"
+        android:elevation="20dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

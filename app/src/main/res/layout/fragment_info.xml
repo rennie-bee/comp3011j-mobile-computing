@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.info.InfoFragment"
+    android:background="@drawable/fragment_background_info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.eldercare.MiClockView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:backgroundColor="#FEAFA8"
+            app:darkColor="#80ffffff"
+            app:lightColor="#ffffff"
+            app:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Reset Your Password?"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center" />
+        <Button
+            android:id="@+id/bt_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="RESET"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:onClick="onClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="Log Out?"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center" />
+        <Button
+            android:id="@+id/bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="LOG OUT"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+
+
+
+</ScrollView>

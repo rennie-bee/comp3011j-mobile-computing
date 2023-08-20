@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--Menu is necessary for implementing a bottom navigation bar
+4 selections on the top-right will be adjusted and placed at the
+bottom of the layout.
+This layout is to set the title, id, icon of 4 different selections-->
+    <item
+        android:id="@+id/navigation_forum"
+        android:enabled="true"
+        android:title="NOTE"
+        android:icon="@drawable/ic_forum_foreground"/>
+    <item
+        android:id="@+id/navigation_info"
+        android:enabled="true"
+        android:title="INFO"
+        android:icon="@drawable/ic_info_foreground"/>
+    <item
+        android:id="@+id/navigation_map"
+        android:enabled="true"
+        android:title="MAP"
+        android:icon="@drawable/ic_map_foreground"/>
+    <item
+        android:id="@+id/navigation_product"
+        android:enabled="true"
+        android:title="PRODUCT"
+        android:icon="@drawable/ic_box_foreground"/>
+
+</menu>
